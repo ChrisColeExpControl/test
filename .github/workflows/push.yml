@@ -12,6 +12,6 @@ jobs:
       - uses: actions/checkout@master
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
       - name: Black Code Formatter
-        uses: ./.github/actions/black
+        uses: ./.github/actions/black-action
         with:
           args: . --line-length 120
