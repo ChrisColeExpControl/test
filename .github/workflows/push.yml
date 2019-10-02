@@ -3,12 +3,15 @@ name: Greet Everyone
 on: [push]
 
 jobs:
-  build:
+  lint:
     # Job name is Greeting
     name: Test
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
       - name: Black Code Formatter
         uses: lgeiger/black-action@v1.0.1
+        with:
+          args: . --check
