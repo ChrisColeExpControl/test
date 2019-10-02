@@ -1,0 +1,11 @@
+name: 'Black reformatter'
+description: 'Reformats Python code using black'
+inputs:
+  args:
+    description: 'args for black'
+    required: true
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.args }}
