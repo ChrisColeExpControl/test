@@ -1,0 +1,5 @@
+name: 'Label Sorter'
+description: 'Sorts labels and project board cards for issues'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
