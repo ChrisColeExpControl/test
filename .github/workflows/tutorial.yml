@@ -8,7 +8,7 @@ jobs:
     steps:
       - name: Hello world action step
         id: hello
-        uses: ./.github/actions/tutorial.yml
+        uses: ./.github/actions/tutorial/action.yml
         with:
           who-to-greet: "Me"
       - name: get output time
