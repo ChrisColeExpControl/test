@@ -1,6 +1,8 @@
 name: marketplace test
 # This workflow is triggered on pushes to the repository.
-on: [push]
+on:
+  issues:
+    types: [labeled, unlabeled]
   
 
 jobs:
@@ -14,7 +16,7 @@ jobs:
       - name: Black Code Formatter
         uses: lgeiger/black-action@v1.0.1
         with:
-          args: . --check
+          args: . --l 100
       - name: git Actions
         uses: srt32/git-actions@v0.0.3
         with:
