@@ -1,10 +1,9 @@
-Project name1:
-  Column name1:
-    - 'Status: test1'
-  Column name2:
+Project test:
+  Column 1:
+    - 'Status: test'
+  Column 2:
     - 'Status: test2-1'
     - 'Status: test2-2'
-Project name2:
-  Column name3:
+  Column 4:
     - 'Status: test1'
     
