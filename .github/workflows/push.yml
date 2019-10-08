@@ -12,7 +12,5 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@master
-      # This step uses GitHub's hello-world-javascript-action: https://github.com/actions/hello-world-javascript-action
-      - name: Label updater
-        uses: ./.github/actions/label-action
+      - name: git Actions
+        uses: srt32/git-actions@v0.0.3
