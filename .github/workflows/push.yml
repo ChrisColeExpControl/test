@@ -20,4 +20,12 @@ jobs:
       - name: git Actions
         uses: srt32/git-actions@v0.0.3
         with:
-          args: git status
+          args: git add -u
+      - name: git Actions
+        uses: srt32/git-actions@v0.0.3
+        with:
+          args: git commit -m "reformatted python"
+      - name: git Actions
+        uses: srt32/git-actions@v0.0.3
+        with:
+          args: git push
