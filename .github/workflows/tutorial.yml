@@ -1,4 +1,4 @@
-on: [push]
+on: [project_card]
 name: "GitHub hello world tutorial"
 
 jobs:
