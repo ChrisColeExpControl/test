@@ -17,15 +17,15 @@ jobs:
         uses: lgeiger/black-action@v1.0.1
         with:
           args: . --line-length 100
-      - name: git Actions
+      - name: git add
         uses: srt32/git-actions@v0.0.3
         with:
           args: git add -u
-      - name: git Actions
+      - name: git commit
         uses: srt32/git-actions@v0.0.3
         with:
           args: git commit -m "reformatted python"
-      - name: git Actions
+      - name: git push
         uses: srt32/git-actions@v0.0.3
         with:
           args: git push
