@@ -9,7 +9,7 @@ jobs:
       - uses: actions/checkout@master
       - name: Hello world action step
         id: hello
-        uses: ./.github/actions/tutorial/action.yml
+        uses: ./.github/actions/tutorial
         with:
           who-to-greet: "Me"
       - name: get output time
