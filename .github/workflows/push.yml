@@ -12,6 +12,7 @@ jobs:
     # This job runs on Linux
     runs-on: ubuntu-latest
     steps:
+      - uses: ./
       - name: Black Code Formatter
         uses: lgeiger/black-action@v1.0.1
         with:
