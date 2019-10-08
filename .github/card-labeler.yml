@@ -1,9 +1,9 @@
-Project test:
-  Column 1:
+test:
+  '1':
     - 'test'
-  Column 2:
+  '2':
     - 'test2-1'
     - 'test2-2'
-  Column 4:
+  '4':
     - 'test1'
     
