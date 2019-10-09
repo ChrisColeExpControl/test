@@ -7,8 +7,8 @@ jobs:
     name: Auto card labeler
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@master
       - name: Auto card labeler
         uses: technote-space/auto-card-labeler@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          
